@@ -19425,7 +19425,7 @@
 	                orderId: document.getElementById('orderId').value,
 	                text: document.getElementById('text').value
 	            };
-	            _axios2.default.post('https://criochallenge.herokuapp.com:8080/qeats/v1/reviews/share', obj).then(function (res) {
+	            _axios2.default.post('https://criochallenge.herokuapp.com/qeats/v1/reviews/share', obj).then(function (res) {
 	                console.log(res.data);
 	                window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcriostorage.s3.ap-south-1.amazonaws.com%2F" + obj.orderId + "&amp;src=sdkpreparse");
 	            });
